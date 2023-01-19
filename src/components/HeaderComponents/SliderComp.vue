@@ -71,11 +71,11 @@ export default {
     button {
         background-color: transparent;
         border: none;
-        color: $light-color;
+        color: $main-color;
         font-size: 1.3rem;
 
         i {
-            background-color: $dark-color;
+            background-color: $secondary-color;
             padding: 1rem;
         }
     }

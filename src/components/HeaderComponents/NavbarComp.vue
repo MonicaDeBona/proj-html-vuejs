@@ -33,15 +33,17 @@ export default {
                 </li>
             </ul>
         </nav>
-        <div class="user-cart-actions">
-            <button><i class="fa-solid fa-lock"></i>My Account</button>
-            <button><i class="fa-solid fa-plus"></i>Add Car</button>
+        <div class="user-cart-actions d-flex">
+            <button class="padlock"><img class="button-img" :src="store.getImagePath('padlock.png')" alt=""> My
+                Account</button>
+            <button><img class="button-img" :src="store.getImagePath('add.png')" alt="">Add Car</button>
         </div>
         <div class="hamburger-menu">
             <i class="fa-solid fa-bars"></i>
         </div>
         <div class="operator-chat">
-            <button><i class="fa-solid fa-headphones"></i>+1 (234) 567 89 10</button>
+            <button><img class="button-img" :src="store.getImagePath('headphones.png')" alt="">+1 (234) 567 89
+                10</button>
         </div>
     </div>
 </template>
@@ -54,19 +56,41 @@ export default {
 
     img {
         width: 210px;
+
     }
 }
 
 nav ul li a {
-    color: $dark-color;
+    color: $secondary-color;
     padding-left: 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 
 button {
-    color: $light-color;
-    background-color: $dark-color;
-    border: 1px solid $dark-color;
+    color: $main-color;
+    background-color: $secondary-color;
+    border: 1px solid $secondary-color;
     border-radius: 5px;
-    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+
+    .button-img {
+        filter: invert(100%);
+        width: 40px;
+        margin-right: .3rem;
+    }
+}
+
+.padlock {
+    margin-right: .5rem;
+}
+
+.fa-bars {
+    font-size: 1.5rem;
+    padding: 0 1.5rem;
 }
 </style>
