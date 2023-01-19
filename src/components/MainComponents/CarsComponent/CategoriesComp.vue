@@ -57,5 +57,11 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../../../styles/partials/variables' as *;
 
+.category-card {
+    border: none;
+    padding: 3rem 2rem 1rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
 </style>
