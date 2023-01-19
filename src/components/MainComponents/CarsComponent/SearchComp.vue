@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <div class="select-search-container cars-comp-wrapper d-flex justify-content-between">
+    <div class="select-search-container main-wrapper d-flex justify-content-between">
         <button>
             Keywords
         </button>
@@ -37,22 +37,23 @@ export default {
 @use '../../../styles/partials/variables' as *;
 
 .select-search-container {
-    padding: 3rem 2rem 2rem;
+    padding: 3rem 1rem;
 
     button,
     select {
-        background-color: $light-color;
-        border: .1px solid $gray-color;
-        padding: 1.5rem 2.5rem;
-        color: $gray-color;
+        background-color: $main-color;
+        border: .1px solid $accent-color;
+        padding: 1.4rem 2.7rem;
+        color: $accent-color;
         border-radius: 5px;
         font-size: 1rem;
+
     }
 
     .search {
-        background-color: $dark-color;
-        border: .1px solid $dark-color;
-        color: $light-color;
+        background-color: $secondary-color;
+        border: .1px solid $secondary-color;
+        color: $main-color;
         font-weight: bold;
     }
 }
