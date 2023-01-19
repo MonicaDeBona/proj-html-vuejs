@@ -20,7 +20,7 @@ export default {
 </script>
 
 <template>
-    <div class="wrapper d-flex align-items-center justify-content-between">
+    <div class="nav-wrapper d-flex align-items-center justify-content-between">
         <div class="main-logo">
             <img :src="store.getImagePath('logo-autocar11.png')" alt="Autocar Main Logo">
         </div>

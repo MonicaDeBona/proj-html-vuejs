@@ -1,7 +1,7 @@
 <script>
-import SearchComp from './MainComponents/SearchComp.vue';
-import CategoriesComp from './MainComponents/CategoriesComp.vue';
-import CardComp from './MainComponents/CardCompt.vue';
+import SearchComp from './MainComponents/CarsComponent/SearchComp.vue';
+import CategoriesComp from './MainComponents/CarsComponent/CategoriesComp.vue';
+import CardComp from './MainComponents/CarsComponent/CardComp.vue'
 export default {
     name: 'AppMain',
 
