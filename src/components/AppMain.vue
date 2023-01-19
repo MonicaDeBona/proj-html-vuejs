@@ -1,14 +1,18 @@
 <script>
 import SearchComp from './MainComponents/CarsComponent/SearchComp.vue';
 import CategoriesComp from './MainComponents/CarsComponent/CategoriesComp.vue';
-import CardComp from './MainComponents/CarsComponent/CardComp.vue'
+import CategoriesResultsComp from './MainComponents/CarsComponent/CategoriesResultsComp.vue';
+import CustomersComp from './MainComponents/CustomersComp.vue';
+import ArticlesComp from './MainComponents/ArticlesComp.vue';
 export default {
     name: 'AppMain',
 
     components: {
         SearchComp,
         CategoriesComp,
-        CardComp
+        CategoriesResultsComp,
+        CustomersComp,
+        ArticlesComp
     }
 }
 </script>
@@ -16,7 +20,9 @@ export default {
 <template>
     <SearchComp />
     <CategoriesComp />
-    <CardComp />
+    <CategoriesResultsComp />
+    <CustomersComp />
+    <ArticlesComp />
 </template>
 
 <style lang="scss" scoped>
