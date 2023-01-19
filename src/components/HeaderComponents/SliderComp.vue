@@ -20,7 +20,6 @@ export default {
             }
             this.$emit('imageChanged', this.activeIndex);
         },
-
         previousSlide() {
             this.activeIndex--;
             if (this.activeIndex < 0) {
@@ -29,7 +28,6 @@ export default {
             this.$emit('imageChanged', this.activeIndex);
         },
     }
-
 }
 </script>
 
@@ -55,11 +53,11 @@ export default {
 
 .img-slider {
     width: 100%;
-    height: 700px;
+    height: 800px;
 
     img {
         object-fit: cover;
-        object-position: bottom
+        object-position: center;
     }
 }
 
