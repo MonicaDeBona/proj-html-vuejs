@@ -13,7 +13,7 @@ export default {
 
 <template>
     <NavbarComp />
-    <SliderComp />
+    <slider-comp @imageChanged="handleImageChanged"></slider-comp>
 </template>
 
 <style lang="scss" scoped>
