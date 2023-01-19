@@ -1,67 +1,58 @@
 <script>
 import { store } from '../../../store';
+import CategoryComp from './CategoryComp.vue';
+
 export default {
     name: 'CategoriesComp',
+    components: {
+        CategoryComp
+    },
     data() {
         return {
             store,
-            carsCategory: [
+            cardsList: [
                 {
-                    thumb: store.getImagePath('cabrio.jpg'),
+                    path: store.getImagePath('cabrio.jpg'),
                     type: 'Cabrio',
                     listing: '3 Listings'
                 },
                 {
-                    thumb: store.getImagePath('coupe.jpg'),
+                    path: store.getImagePath('coupe.jpg'),
                     type: 'Coupe',
                     listing: '0 Listings'
                 },
                 {
-                    thumb: store.getImagePath('hatchback.jpg'),
+                    path: store.getImagePath('hatchback.jpg'),
                     type: 'Hatchback',
                     listing: '2 Listings'
                 },
                 {
-                    thumb: store.getImagePath('pickup.jpg'),
+                    path: store.getImagePath('pickup.jpg'),
                     type: 'Pick Up',
                     listing: '0 Listings'
                 },
                 {
-                    thumb: store.getImagePath('sedan.jpg'),
+                    path: store.getImagePath('sedan.jpg'),
                     type: 'Sedan',
                     listing: '3 Listings'
                 },
                 {
-                    thumb: store.getImagePath('suv.jpg'),
+                    path: store.getImagePath('suv.jpg'),
                     type: 'Suv',
                     listing: '4 Listings'
                 },
             ]
         }
     },
-    methods: {
-
-    }
-
 }
 </script>
 
 <template>
-    <div class="categories d-flex cars-comp-wrapper justify-content-between">
-        <div class="category-card d-flex f-column align-items-center" v-for="carCategory in carsCategory">
-            <img :src="carCategory.thumb" alt="cars">
-            <h3>{{ carCategory.type }}</h3>
-            <p>{{ carCategory.listing }}</p>
-        </div>
+    <div class="categories d-flex main-wrapper">
+        <CategoryComp v-for="card in cardsList" :carPath="card.path" :carType="card.type" :carListing="card.listing" />
     </div>
 </template>
 
 <style lang="scss" scoped>
-@use '../../../styles/partials/variables' as *;
 
-.category-card {
-    border: none;
-    padding: 3rem 2rem 1rem;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
 </style>
