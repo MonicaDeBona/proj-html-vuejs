@@ -2,6 +2,7 @@
 import SearchComp from './MainComponents/CarsComponent/SearchComp.vue';
 import CategoriesComp from './MainComponents/CarsComponent/CategoriesComp.vue';
 import CategoriesResultsComp from './MainComponents/CarsComponent/CategoriesResultsComp.vue';
+import BuySellVehicleComp from './MainComponents/BuySellVehicleComp.vue';
 import CustomersComp from './MainComponents/CustomersComp.vue';
 import ArticlesComp from './MainComponents/ArticlesComp.vue';
 export default {
@@ -11,6 +12,7 @@ export default {
         SearchComp,
         CategoriesComp,
         CategoriesResultsComp,
+        BuySellVehicleComp,
         CustomersComp,
         ArticlesComp
     }
@@ -21,6 +23,7 @@ export default {
     <SearchComp />
     <CategoriesComp />
     <CategoriesResultsComp />
+    <BuySellVehicleComp />
     <CustomersComp />
     <ArticlesComp />
 </template>
