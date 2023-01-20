@@ -56,6 +56,7 @@ export default {
 
     img {
         width: 210px;
+        padding-top: .5rem;
 
     }
 }

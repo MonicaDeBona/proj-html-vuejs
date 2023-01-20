@@ -6,12 +6,8 @@ export default {
 
 <template>
     <div class="select-search-container main-wrapper d-flex justify-content-between">
-        <button>
-            Keywords
-        </button>
-        <button>
-            Location
-        </button>
+        <input type="text" id="keywords" placeholder="Keywords">
+        <input type="text" id="Location" placeholder="Location">
         <select name="categories" id="categories">
             <option value="categories">All Categories</option>
         </select>
@@ -39,15 +35,17 @@ export default {
 .select-search-container {
     padding: 2.5rem 1rem 2rem;
 
+    input,
     button,
     select {
         background-color: $main-color;
         border: .1px solid $accent-color;
-        padding: 1.4rem 2.7rem;
         color: $accent-color;
         border-radius: 5px;
         font-size: 1rem;
-
+        padding: 1.5rem 1.5rem;
+        width: 10rem;
+        text-align: center;
     }
 
     .search {

@@ -67,6 +67,10 @@ export default {
         .fa-heart {
             font-size: 1rem;
             color: $accent-color;
+
+            &:hover {
+                color: $secondary-color;
+            }
         }
     }
 }

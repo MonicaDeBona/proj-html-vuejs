@@ -17,7 +17,7 @@ export default {
 </script>
 
 <template>
-    <div class="customer-card">
+    <div class="customer-card d-flex f-column align-items-center">
         <p>{{ customerText }}</p>
         <img :src="customerPath" alt="customer">
         <h4>{{ customerName }}</h4>
@@ -58,7 +58,8 @@ export default {
         position: relative;
         color: #eeedf5;
         z-index: -1;
-        bottom: 270px;
+        bottom: 260px;
+        left: 30px;
         transform: translateX(-50%);
 
         i {
