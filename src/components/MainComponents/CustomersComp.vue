@@ -20,20 +20,17 @@ export default {
                     text: 'We are a gallery vehicle dealer. Before we met this site, our sales were sluggish..',
                     path: store.getImagePath('testimonial2-1.png'),
                     name: 'Christie',
-
                 },
                 {
                     text: 'We are a gallery vehicle dealer. Before we met this site, our sales were sluggish..',
                     path: store.getImagePath('man2.png'),
                     name: 'Robert',
-
                 },
                 {
                     text: 'We are a gallery vehicle dealer. Before we met this site, our sales were sluggish..',
                     path: store.getImagePath('testimonial4-1.png'),
-                    name: 'Elizabeth',
-
-                }
+                    name: 'Elizabeth'
+                },
             ]
         }
     },

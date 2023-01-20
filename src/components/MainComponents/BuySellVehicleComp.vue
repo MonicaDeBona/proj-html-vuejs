@@ -14,6 +14,8 @@ export default {
         <div class="imgs-box">
             <img class="rotate" :src="store.getImagePath('circle-auto-car-1.png')" alt="pattern">
             <img class="autocar-abs" :src="store.getImagePath('aoutcar-about-1.png')" alt="">
+            <div class="years d-flex align-items-center">24 Years of Experience</div>
+            <div class="experts d-flex align-items-center">240 Social Expert Team</div>
         </div>
         <div class="info-text">
             <h2>
@@ -59,6 +61,28 @@ section {
     .imgs-box {
         flex-basis: 60%;
         position: relative;
+
+        .experts,
+        .years {
+            height: 170px;
+            width: 170px;
+            border-radius: 50%;
+            background-color: $secondary-color;
+            position: absolute;
+            color: $main-color;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .years {
+            bottom: 80px;
+            right: 150px;
+        }
+
+        .experts {
+            top: 80px;
+            left: 80px;
+        }
 
         .rotate {
             animation: rotation 10s infinite linear;

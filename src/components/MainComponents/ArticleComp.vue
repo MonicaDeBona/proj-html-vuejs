@@ -41,6 +41,11 @@ export default {
     margin: 1rem;
     padding: 1rem;
     text-align: center;
+    transition: transform .3s ease;
+
+    &:hover {
+        transform: translateY(-10px);
+    }
 
     h3 {
         padding: .7rem 0;
