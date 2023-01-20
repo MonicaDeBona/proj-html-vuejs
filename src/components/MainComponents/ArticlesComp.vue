@@ -15,7 +15,7 @@ export default {
                     path: store.getImagePath('news-autocar-1-300x180.jpg'),
                     data: '06.07.2022',
                     author: 'Auto Car',
-                    title: 'Who is BMW loved?',
+                    title: 'Why is BMW loved?',
                     summary: 'BMWs have a different line with their designs and almost [...]'
                 },
                 {
@@ -93,9 +93,5 @@ export default {
         font-size: 1.1rem;
         padding-bottom: 1.5rem;
     }
-
-    // .articles-items {
-    //     column-gap: 2rem;
-    // }
 }
 </style>

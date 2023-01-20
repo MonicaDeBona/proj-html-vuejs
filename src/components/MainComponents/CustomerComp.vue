@@ -21,6 +21,7 @@ export default {
         <p>{{ customerText }}</p>
         <img :src="customerPath" alt="customer">
         <h4>{{ customerName }}</h4>
+        <span class="quotes"><i class="fa-solid fa-quote-right"></i></span>
     </div>
 
 </template>
@@ -30,10 +31,12 @@ export default {
 
 .customer-card {
     margin: 1rem;
-    padding: 4rem 2.5rem;
+    padding: 4rem 2.5rem 0;
     text-align: center;
     border-radius: 10px;
     background-color: $main-color;
+    position: relative;
+    z-index: 1;
 
     img {
         width: 100px;
@@ -42,10 +45,25 @@ export default {
 
     p {
         font-weight: 300;
+        z-index: 1;
     }
 
     h4 {
         font-weight: 300;
+    }
+
+
+    .quotes {
+        font-size: 5rem;
+        position: relative;
+        color: #eeedf5;
+        z-index: -1;
+        bottom: 270px;
+        transform: translateX(-50%);
+
+        i {
+            transform: rotate(10deg);
+        }
     }
 }
 </style>
