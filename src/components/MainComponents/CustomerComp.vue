@@ -25,11 +25,11 @@ export default {
 
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @use '../../styles/partials/variables' as *;
 
 .customer-card {
-    margin: 2rem;
+    margin: 1rem;
     padding: 4rem 2.5rem;
     text-align: center;
     border-radius: 10px;

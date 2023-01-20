@@ -43,7 +43,6 @@ export default {
     width: calc(100% / 4);
     padding: 1rem;
     border: none;
-    padding: 1rem;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
     h3,

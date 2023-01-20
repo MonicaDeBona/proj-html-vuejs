@@ -51,41 +51,46 @@ export default {
 <style lang="scss" scoped>
 @use '../../styles/partials/variables' as *;
 
-.img-slider {
-    width: 100%;
-    height: 800px;
+.slider {
+    border-top: 13px solid $secondary-color;
+    border-bottom: 13px solid $secondary-color;
 
-    img {
-        object-fit: cover;
-        object-position: center;
-    }
-}
+    .img-slider {
+        width: 100%;
+        height: 800px;
 
-.slider-buttons {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-
-    button {
-        background-color: transparent;
-        border: none;
-        color: $main-color;
-        font-size: 1.3rem;
-
-        i {
-            background-color: $secondary-color;
-            padding: 1rem;
+        img {
+            object-fit: cover;
+            object-position: center;
         }
     }
 
-    .slider-nav-button:first-child {
-        margin-right: auto;
-    }
+    .slider-buttons {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 30px;
+        right: 30px;
 
-    .slider-nav-button:last-child {
-        margin-left: auto;
+        button {
+            background-color: transparent;
+            border: none;
+            color: $main-color;
+            font-size: 1.3rem;
+
+            i {
+                background-color: $secondary-color;
+                padding: 1.3rem;
+            }
+        }
+
+        .slider-nav-button:first-child {
+            margin-right: auto;
+        }
+
+        .slider-nav-button:last-child {
+            margin-left: auto;
+        }
     }
 }
 </style>

@@ -82,15 +82,33 @@ export default {
 </script>
 
 <template>
-    <div class="category-results d-flex main-wrapper f-wrap justify-content-between">
-        <SingleResultComp v-for="card in cardsList" :carPath="card.path" :carModel="card.model" :carPrice="card.price"
-            :carType="card.type" :carBrand="card.brand" :carFuel="card.fuel" />
+    <div class="d-flex f-column align-items-center">
+        <div class="category-results d-flex main-wrapper f-wrap justify-content-between">
+            <SingleResultComp v-for="card in cardsList" :carPath="card.path" :carModel="card.model"
+                :carPrice="card.price" :carType="card.type" :carBrand="card.brand" :carFuel="card.fuel" />
+        </div>
+        <button>Show All Cars <i class="fa-solid fa-arrow-right"></i></button>
     </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
+@use '../../../styles/partials/variables' as *;
+
 .category-results {
-    padding-top: 2rem;
+    padding: 2rem 0 1rem;
     row-gap: 1.5rem;
+}
+
+button {
+    background-color: $secondary-color;
+    color: $main-color;
+    padding: 1rem 2.5rem;
+    border: 1px solid $secondary-color;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+
+    i {
+        vertical-align: middle;
+    }
 }
 </style>

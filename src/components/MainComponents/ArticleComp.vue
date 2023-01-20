@@ -19,9 +19,11 @@ export default {
 </script>
 
 <template>
-    <div class="article-card d-flex f-column align-items-center ">
-        <img :src="articlePath" alt="car pic">
-        <div>
+    <div class="article-card d-flex f-column align-items-center justify-content-center ">
+        <div class="article-img">
+            <img :src="articlePath" alt="car pic">
+        </div>
+        <div class="article-info">
             <span>{{ articleData }}</span>
             <span>{{ articleAuthor }}</span>
             <h3>{{ articleTitle }}</h3>
@@ -33,10 +35,11 @@ export default {
 
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .article-card {
-    padding: 2rem;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    justify-content: space-around;
+    margin: 1rem;
+    padding: 1rem;
+
 }
 </style>

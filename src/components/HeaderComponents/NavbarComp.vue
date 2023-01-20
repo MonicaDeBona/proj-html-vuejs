@@ -52,7 +52,7 @@ export default {
 @use '../../styles/partials/variables' as *;
 
 .main-logo {
-    padding-top: 10px;
+    padding-top: 5px;
 
     img {
         width: 210px;

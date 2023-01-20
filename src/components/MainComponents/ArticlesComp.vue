@@ -45,27 +45,31 @@ export default {
 }
 </script>
 <template>
-    <div class="recent-articles d-flex f-column align-items-center">
-        <span class="icon-circle d-flex align-items-center justify-content-center">
-            <i class="fa-regular fa-thumbs-up"></i>
-        </span>
-        <h2>
-            Resent Articles
-        </h2>
-        <h5>
-            Useful Information about car.
-        </h5>
-    </div>
-    <div class="articles d-flex main-wrapper justify-content-around">
-        <ArticleComp v-for="article in articlesList" :articlePath="article.path" :articleData="article.data"
-            :articleAuthor="article.author" :articleTitle="article.title" :articleSummary="article.summary" />
-    </div>
+    <section class=" articles main-wrapper">
+        <div class="recent-articles d-flex f-column align-items-center">
+            <span class="icon-circle d-flex align-items-center justify-content-center">
+                <i class="fa-regular fa-thumbs-up"></i>
+            </span>
+            <h2>
+                Resent Articles
+            </h2>
+            <h5>
+                Useful Information about car.
+            </h5>
+        </div>
+        <div class="articles-items d-flex justify-content-around">
+            <ArticleComp v-for="article in articlesList" :articlePath="article.path" :articleData="article.data"
+                :articleAuthor="article.author" :articleTitle="article.title" :articleSummary="article.summary" />
+        </div>
+    </section>
 </template>
 
 <style lang="scss" scoped>
 @use '../../styles/partials/variables' as *;
 
-.recent-articles {
+.articles {
+    padding: 4rem 0;
+
     .icon-circle {
         height: 110px;
         width: 110px;
@@ -89,9 +93,9 @@ export default {
         font-size: 1.1rem;
         padding-bottom: 1.5rem;
     }
-}
 
-// .articles {
-//     // column-gap: 2rem;
-// }
+    // .articles-items {
+    //     column-gap: 2rem;
+    // }
+}
 </style>

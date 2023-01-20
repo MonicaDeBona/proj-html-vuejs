@@ -37,7 +37,7 @@ export default {
 @use '../../../styles/partials/variables' as *;
 
 .select-search-container {
-    padding: 3rem 1rem;
+    padding: 2.5rem 1rem 2rem;
 
     button,
     select {
